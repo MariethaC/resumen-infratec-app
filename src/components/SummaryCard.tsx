@@ -33,7 +33,7 @@ export interface Summary {
   keyConcepts?: KeyConcept[];
 }
 
-const iconMap = {
+export const iconMap = {
   handshake: Handshake,
   network: Network,
   truck: Truck,
@@ -96,4 +96,3 @@ const SummaryCard = ({ summary, onClick }: SummaryCardProps) => {
 };
 
 export default SummaryCard;
-

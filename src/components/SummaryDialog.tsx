@@ -67,4 +67,3 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
 };
 
 export default SummaryDialog;
-
