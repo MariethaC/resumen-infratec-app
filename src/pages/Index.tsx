@@ -1,7 +1,8 @@
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
-import SummaryCard, { Summary } from "@/components/SummaryCard";
+import { Summary } from "@/components/SummaryCard";
 import SummaryDialog from "@/components/SummaryDialog";
+import SummaryGrid from "@/components/SummaryGrid";
 
 // Datos de ejemplo organizados por temas del curso
 const summaryData: Summary[] = [
@@ -217,8 +218,8 @@ const Index = () => {
     setIsDialogOpen(true);
   };
 
-  // Agrupar resúmenes por tema
-  const groupedSummaries: { [key: string]: Summary[] } = summaries.reduce(
+  // Group summaries by topic
+  const groupedSummaries = summaries.reduce(
     (acc, summary) => {
       (acc[summary.topic] = acc[summary.topic] || []).push(summary);
       return acc;
@@ -233,24 +234,10 @@ const Index = () => {
           Resúmenes de Clase
         </h1>
         <SearchBar onSearch={handleSearch} />
-        <div className="space-y-8">
-          {Object.entries(groupedSummaries).map(([topic, topicSummaries]) => (
-            <div key={topic}>
-              <h2 className="text-xl font-semibold mb-4 text-gray-700">
-                {topic}
-              </h2>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {topicSummaries.map((summary) => (
-                  <SummaryCard
-                    key={summary.id}
-                    summary={summary}
-                    onClick={() => handleSummaryClick(summary)}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+        <SummaryGrid 
+          summaries={groupedSummaries} 
+          onSummaryClick={handleSummaryClick}
+        />
       </div>
       <SummaryDialog
         summary={selectedSummary}
