@@ -9,23 +9,82 @@ const summaryData: Summary[] = [
     id: 1,
     title: "Evolución de la Tecnología",
     topic: "El rol de las tecnologías",
-    content: `Impacto de la tecnología en la sociedad moderna:
+    content: `La tecnología cumple diferentes roles dentro de las organizaciones:
 
-1. Transformación digital
-- Cambios en la forma de trabajar
-- Nuevas herramientas y metodologías
-- Adaptación continua
+- Mediador: conecta a personas y procesos.
+- Externalidad de red: su valor aumenta mientras más usuarios la usan.
+- Canal de distribución: facilita el acceso a productos y servicios.
+- Moderador de tiempo: permite servicios 24/7.
+- Reduce la asimetría: mejora el acceso a la información.
+- Reduce costo de transacción.
+- Universalidad: puede ser usada por todos.
+- Capacidad ilimitada.
+- Estandariza el trabajo: mejora la calidad.
+- Destructor creativo: reemplaza lo viejo y genera innovación.
 
-2. Beneficios y desafíos
-- Mayor eficiencia y productividad
-- Necesidad de actualización constante
-- Brecha digital
-
-3. Tendencias futuras
-- Inteligencia Artificial
-- Internet de las Cosas (IoT)
-- Automatización`,
-    date: "2024-04-15"
+Además:
+- 5 fuerzas de Porter: influyen en la competencia.
+- 5C's: Coordinación, Comercio, Comunidad, Contenido y Comunicación.
+- Uso de las TIC:
+  - Mejora procesos y toma de decisiones.
+  - Interconecta empresas y stakeholders.
+  - Transforma y crea modelos de negocio.
+- Solución empresarial: capacitar, monitorear y evaluar resultados.
+- Sistema de información: aplicado a sistemas empresariales.
+- Tecnología de información: incluye hardware y software.`,
+    date: "2024-04-15",
+    keyConcepts: [
+      {
+        icon: "handshake",
+        label: "Mediador",
+        description: "Conecta personas y procesos"
+      },
+      {
+        icon: "network",
+        label: "Externalidad de red",
+        description: "Valor aumenta con más usuarios"
+      },
+      {
+        icon: "truck",
+        label: "Canal de distribución",
+        description: "Facilita acceso a servicios"
+      },
+      {
+        icon: "clock",
+        label: "Moderador de tiempo",
+        description: "Servicios 24/7"
+      },
+      {
+        icon: "info",
+        label: "Reduce asimetría",
+        description: "Mejora acceso a información"
+      },
+      {
+        icon: "dollar-sign",
+        label: "Reduce costos",
+        description: "Menor costo de transacción"
+      },
+      {
+        icon: "earth",
+        label: "Universalidad",
+        description: "Accesible para todos"
+      },
+      {
+        icon: "infinity",
+        label: "Capacidad ilimitada",
+        description: "Sin límites de escala"
+      },
+      {
+        icon: "hammer",
+        label: "Estandarización",
+        description: "Mejora la calidad"
+      },
+      {
+        icon: "rocket",
+        label: "Destructor creativo",
+        description: "Genera innovación"
+      }
+    ]
   },
   {
     id: 2,

@@ -7,7 +7,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./ui/dialog";
+import { Badge } from "./ui/badge";
 import { Summary } from "./SummaryCard";
+import { iconMap } from "./SummaryCard";
 
 interface SummaryDialogProps {
   summary: Summary | null;
@@ -35,6 +37,27 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
           </DialogTitle>
           <p className="text-sm text-gray-600">{summary.topic}</p>
         </DialogHeader>
+        
+        {summary.keyConcepts && (
+          <div className="grid grid-cols-2 gap-4 mt-6 mb-8">
+            {summary.keyConcepts.map((concept, index) => {
+              const IconComponent = iconMap[concept.icon];
+              return (
+                <div
+                  key={index}
+                  className="flex items-start gap-3 p-4 rounded-lg bg-gray-50"
+                >
+                  <IconComponent className="h-6 w-6 text-purple-600 mt-1" />
+                  <div>
+                    <h4 className="font-medium text-sm mb-1">{concept.label}</h4>
+                    <p className="text-sm text-gray-600">{concept.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         <div className="mt-4 text-gray-800 leading-relaxed whitespace-pre-wrap">
           {summary.content}
         </div>
@@ -44,3 +67,4 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
 };
 
 export default SummaryDialog;
+
