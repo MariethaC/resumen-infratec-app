@@ -1,69 +1,141 @@
-
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import SummaryCard, { Summary } from "@/components/SummaryCard";
 import SummaryDialog from "@/components/SummaryDialog";
 
-// Datos de ejemplo
+// Datos de ejemplo organizados por temas del curso
 const summaryData: Summary[] = [
   {
     id: 1,
-    title: "Introducción a la Programación",
-    topic: "Fundamentos de Programación",
-    content: `¿Qué es la programación?
-La programación es el proceso de crear un conjunto de instrucciones que le dicen a una computadora cómo realizar una tarea.
+    title: "Evolución de la Tecnología",
+    topic: "El rol de las tecnologías",
+    content: `Impacto de la tecnología en la sociedad moderna:
 
-Conceptos básicos:
-- Variables
-- Tipos de datos
-- Estructuras de control
-- Funciones
-- Algoritmos
+1. Transformación digital
+- Cambios en la forma de trabajar
+- Nuevas herramientas y metodologías
+- Adaptación continua
 
-Beneficios de la programación:
-1. Desarrollo del pensamiento lógico
-2. Resolución de problemas
-3. Creatividad
-4. Oportunidades laborales`,
+2. Beneficios y desafíos
+- Mayor eficiencia y productividad
+- Necesidad de actualización constante
+- Brecha digital
+
+3. Tendencias futuras
+- Inteligencia Artificial
+- Internet de las Cosas (IoT)
+- Automatización`,
     date: "2024-04-15"
   },
   {
     id: 2,
-    title: "Estructuras de Datos",
-    topic: "Fundamentos de Programación",
-    content: `Las estructuras de datos son formas de organizar y almacenar datos.
+    title: "Fundamentos de Redes",
+    topic: "Redes de datos",
+    content: `Conceptos básicos de redes de datos:
 
-Tipos principales:
-1. Arrays
-2. Listas enlazadas
-3. Pilas
-4. Colas
-5. Árboles
-6. Grafos
+1. Tipos de redes
+- LAN (Red de Área Local)
+- WAN (Red de Área Amplia)
+- MAN (Red de Área Metropolitana)
 
-Importancia:
-- Eficiencia en el manejo de datos
-- Optimización de recursos
-- Mejor organización del código`,
+2. Protocolos principales
+- TCP/IP
+- HTTP/HTTPS
+- DNS
+
+3. Componentes de red
+- Routers
+- Switches
+- Firewalls`,
     date: "2024-04-16"
   },
   {
     id: 3,
-    title: "HTML y CSS Básico",
-    topic: "Desarrollo Web",
-    content: `HTML (HyperText Markup Language):
-- Estructura básica de una página web
-- Etiquetas principales
-- Elementos semánticos
-- Enlaces y navegación
+    title: "Estructura del Data Center",
+    topic: "Data center y almacenamiento",
+    content: `Componentes y funcionamiento del Data Center:
 
-CSS (Cascading Style Sheets):
-- Selectores
-- Propiedades básicas
-- Box model
-- Flexbox y Grid
-- Responsive design`,
+1. Infraestructura física
+- Sistemas de refrigeración
+- Alimentación eléctrica
+- Seguridad física
+
+2. Sistemas de almacenamiento
+- SAN (Storage Area Network)
+- NAS (Network Attached Storage)
+- DAS (Direct Attached Storage)
+
+3. Consideraciones de diseño
+- Redundancia
+- Escalabilidad
+- Eficiencia energética`,
     date: "2024-04-17"
+  },
+  {
+    id: 4,
+    title: "Arquitectura Cliente-Servidor",
+    topic: "Servidores e Internet",
+    content: `Funcionamiento de servidores e Internet:
+
+1. Tipos de servidores
+- Servidores web
+- Servidores de aplicaciones
+- Servidores de bases de datos
+
+2. Protocolos de Internet
+- HTTP y HTTPS
+- FTP
+- SMTP
+
+3. Seguridad en servidores
+- Firewall
+- SSL/TLS
+- Actualizaciones de seguridad`,
+    date: "2024-04-18"
+  },
+  {
+    id: 5,
+    title: "Tecnologías de Virtualización",
+    topic: "Virtualización",
+    content: `Conceptos fundamentales de virtualización:
+
+1. Tipos de virtualización
+- Virtualización de servidores
+- Virtualización de escritorio
+- Virtualización de red
+
+2. Beneficios
+- Mejor utilización de recursos
+- Mayor flexibilidad
+- Reducción de costos
+
+3. Herramientas principales
+- VMware
+- Hyper-V
+- VirtualBox`,
+    date: "2024-04-19"
+  },
+  {
+    id: 6,
+    title: "Modelos de Servicio Cloud",
+    topic: "Cloud computing",
+    content: `Fundamentos de Cloud Computing:
+
+1. Modelos de servicio
+- IaaS (Infraestructura como Servicio)
+- PaaS (Plataforma como Servicio)
+- SaaS (Software como Servicio)
+
+2. Ventajas del cloud
+- Escalabilidad
+- Flexibilidad
+- Pago por uso
+
+3. Principales proveedores
+- AWS
+- Microsoft Azure
+- Google Cloud Platform`,
+    date: "2024-04-20"
   }
 ];
 
