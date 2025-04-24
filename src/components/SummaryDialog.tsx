@@ -50,7 +50,9 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
                   <IconComponent className="h-6 w-6 text-purple-600 mt-1" />
                   <div>
                     <h4 className="font-medium text-sm mb-1">{concept.label}</h4>
-                    <p className="text-sm text-gray-600">{concept.description}</p>
+                    {concept.description && (
+                      <p className="text-sm text-gray-600">{concept.description}</p>
+                    )}
                   </div>
                 </div>
               );

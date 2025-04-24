@@ -21,7 +21,7 @@ import { Badge } from "./ui/badge";
 export interface KeyConcept {
   icon: keyof typeof iconMap;
   label: string;
-  description: string;
+  description?: string;
 }
 
 export interface Summary {
