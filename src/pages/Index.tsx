@@ -55,14 +55,27 @@ const Index = () => {
     setIsDialogOpen(true);
   };
   return (
-    <div className="grid gap-4 sm:grid-cols-2 mt-8">
-      {summaries.map((summary) => (
-        <SummaryCard
-          key={summary.id}
-          summary={summary}
-          onClick={() => handleSummaryClick(summary)}
-        />
-      ))}
+    <div className="min-h-screen bg-gray-50 px-4 py-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+          Resúmenes de Clase
+        </h1>
+        <SearchBar onSearch={handleSearch} />
+        <div className="grid gap-4 sm:grid-cols-2 mt-8">
+          {summaries.map((summary) => (
+            <SummaryCard
+              key={summary.id}
+              summary={summary}
+              onClick={() => handleSummaryClick(summary)}
+            />
+          ))}
+        </div>
+      </div>
+      <SummaryDialog
+        summary={selectedSummary}
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+      />
     </div>
   );
 };
