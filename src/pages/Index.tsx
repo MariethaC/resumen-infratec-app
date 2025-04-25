@@ -8,47 +8,59 @@ import SummaryGrid from "@/components/SummaryGrid";
 const summaryData: Summary[] = [
   {
     id: 1,
-    title: "Evolución de la Tecnología",
-    topic: "El rol de las tecnologías",
-    content: `La tecnología cumple diferentes roles dentro de las organizaciones:
+    title: "El Rol de las Tecnologías",
+    topic: "Tecnologías de la Información",
+    content: `La tecnología cumple diferentes roles (ROLES):
 
-- Mediador: conecta a personas y procesos.
-- Externalidad de red: su valor aumenta mientras más usuarios la usan.
-- Canal de distribución: facilita el acceso a productos y servicios.
-- Moderador de tiempo: permite servicios 24/7.
-- Reduce la asimetría: mejora el acceso a la información.
-- Reduce costo de transacción.
-- Universalidad: puede ser usada por todos.
-- Capacidad ilimitada.
-- Estandariza el trabajo: mejora la calidad.
-- Destructor creativo: reemplaza lo viejo y genera innovación.
+Mediador: Puente entre 2 personas que tienen objetivos similares o complementarios.
+Externalidad de red: Con cuantas personas se puede comunicar o conectar una empresa.
+Canal de distribución: Conecta a todo el mundo. Se volvió canal de entrega.
+Moderador de tiempo: Ofrecer y tener acceso a servicios 24/7.
+Reduce asimetría: Mayor cantidad de personas con acceso a información.
+Reduce Costo: de transacción.
+Universalidad: Usada por todos.
+Capacidad infinita: la limitante no es la capacidad, es el presupuesto.
+Estándar de bajo costo: de comunicación, de seguridad de vpn's que no cuestan mucho.
+Destructor creativo: con la intención de ser más eficiente, da de baja modelos y crea modelos usando tecnología.
 
-Además:
-- 5 fuerzas de Porter: influyen en la competencia.
-- 5C's: Coordinación, Comercio, Comunidad, Contenido y Comunicación.
-- Uso de las TIC:
-  - Mejora procesos y toma de decisiones.
-  - Interconecta empresas y stakeholders.
-  - Transforma y crea modelos de negocio.
-- Solución empresarial: capacitar, monitorear y evaluar resultados.
-- Sistema de información: aplicado a sistemas empresariales.
-- Tecnología de información: incluye hardware y software.`,
+5 Fuerzas de Porter:
+La tecnología se une para reducir las amenazas y aprovechar las oportunidades.
+
+5 C's:
+- Coordinación
+- Comercio
+- Comunidad
+- Contenido
+- Comunicación
+
+Uso de las TIC's:
+- Mejora de procesos: eficientes y automatizados
+- Mejora de la toma de decisiones: provee información
+- Interconecta empresa-stakeholders
+- Transforma/crea organizaciones: modifica/define un modelo de negocio
+
+Solución empresarial: capacitar, monitoriar, evaluar
+Sistema de información: Aplicaciones en sistema empresarial
+Tecnologías de información: Hardware + Software
+
+Combinación de equipos, software, aplicaciones y servicios que resuelven un problema de negocios.
+El conjunto de componentes es base para que la solución brinde resultados.`,
     date: "2024-04-15",
     keyConcepts: [
       {
-        icon: "handshake",
+        icon: "arrows-right-left",
         label: "Mediador",
-        description: "Conecta personas y procesos"
+        description: "Puente entre personas con objetivos similares"
       },
       {
         icon: "network",
         label: "Externalidad de red",
-        description: "Valor aumenta con más usuarios"
+        description: "Conexión entre personas y empresa"
       },
       {
-        icon: "truck",
+        icon: "arrow-right",
         label: "Canal de distribución",
-        description: "Facilita acceso a servicios"
+        description: "Conecta al mundo entero"
       },
       {
         icon: "clock",
@@ -58,7 +70,7 @@ Además:
       {
         icon: "info",
         label: "Reduce asimetría",
-        description: "Mejora acceso a información"
+        description: "Mayor acceso a información"
       },
       {
         icon: "dollar-sign",
@@ -66,24 +78,24 @@ Además:
         description: "Menor costo de transacción"
       },
       {
-        icon: "earth",
+        icon: "globe",
         label: "Universalidad",
-        description: "Accesible para todos"
+        description: "Usada por todos"
       },
       {
         icon: "infinity",
-        label: "Capacidad ilimitada",
-        description: "Sin límites de escala"
+        label: "Capacidad infinita",
+        description: "Limitada por presupuesto"
       },
       {
-        icon: "hammer",
-        label: "Estandarización",
-        description: "Mejora la calidad"
+        icon: "columns-3",
+        label: "Estándar de bajo costo",
+        description: "Comunicación y seguridad accesible"
       },
       {
         icon: "rocket",
         label: "Destructor creativo",
-        description: "Genera innovación"
+        description: "Crea nuevos modelos eficientes"
       }
     ]
   },
