@@ -7,7 +7,6 @@ export interface Summary {
   id: number;
   title: string;
   topic: string;
-  content: string;
   date: string;
   url: string;
 }
