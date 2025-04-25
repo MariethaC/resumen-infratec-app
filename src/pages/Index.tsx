@@ -8,32 +8,32 @@ const summaryData: Summary[] = [
   {
     id: 1,
     title: "Rol de la Tecnología",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   },
   {
     id: 2,
     title: "Fundamentos de Redes",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   },
   {
     id: 3,
     title: "Estructura del Data Center",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   },
   {
     id: 4,
     title: "Arquitectura Cliente-Servidor",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   },
   {
     id: 5,
     title: "Tecnologías de Virtualización",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   },
   {
     id: 6,
     title: "Modelos de Servicio Cloud",
-    url:"public/imagenes/rol-tecnologia.png"
+    url:"/imagenes/rol-tecnologia.png"
   }
 ];
 
