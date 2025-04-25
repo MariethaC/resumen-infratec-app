@@ -7,8 +7,8 @@ import SummaryDialog from "@/components/SummaryDialog";
 const summaryData: Summary[] = [
   {
     id: 1,
-    title: "Evolución de la Tecnología",
-    topic: "El rol de las tecnologías",
+    title: "Rol de la Tecnología",
+    topic: " ",
     content: `Impacto de la tecnología en la sociedad moderna:
 
 1. Transformación digital
