@@ -79,7 +79,7 @@ El conjunto de componentes es base para que la solución brinde resultados.`,
         description: "Usada por todos"
       },
       {
-        icon: "infinity",
+        icon: "layers",
         label: "Capacidad infinita",
         description: "Limitada por presupuesto"
       },
