@@ -18,7 +18,7 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
 
   // Map of topics to their corresponding images
   const topicImages: { [key: string]: string } = {
-    "El rol de las tecnologías": "/imagenes/rol-tecnologia.png",
+    "El rol de las tecnologías": "public/imagenes/rol-tecnologia.png",
     // Add more mappings for other topics as needed
   };
 
