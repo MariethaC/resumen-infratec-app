@@ -9,7 +9,6 @@ const summaryData: Summary[] = [
     id: 1,
     title: "Rol de la Tecnología",
     topic: " ",
-    content: `holi`,
     date: " ",
     url:"public/imagenes/rol-tecnologia.png"
   },
@@ -17,7 +16,6 @@ const summaryData: Summary[] = [
     id: 2,
     title: "Fundamentos de Redes",
     topic: "Redes de datos",
-    content: `Conclls`,
     date: "2024-04-16",
     url:"public/imagenes/rol-tecnologia.png"
   },
@@ -25,7 +23,6 @@ const summaryData: Summary[] = [
     id: 3,
     title: "Estructura del Data Center",
     topic: "Data center y almacenamiento",
-    content: `Compgética`,
     date: "2024-04-17",
     url:"public/imagenes/rol-tecnologia.png"
   },
@@ -33,7 +30,6 @@ const summaryData: Summary[] = [
     id: 4,
     title: "Arquitectura Cliente-Servidor",
     topic: "Servidores e Internet",
-    content: `Funcionad`,
     date: "2024-04-18",
     url:"public/imagenes/rol-tecnologia.png"
   },
@@ -41,7 +37,6 @@ const summaryData: Summary[] = [
     id: 5,
     title: "Tecnologías de Virtualización",
     topic: "Virtualización",
-    content: `Conx`,
     date: "2024-04-19",
     url:"public/imagenes/rol-tecnologia.png"
   },
@@ -49,7 +44,6 @@ const summaryData: Summary[] = [
     id: 6,
     title: "Modelos de Servicio Cloud",
     topic: "Cloud computing",
-    content: `Fundameud Platform`,
     date: "2024-04-20",
     url:"public/imagenes/rol-tecnologia.png"
   }
