@@ -47,7 +47,7 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
                   key={index}
                   className="flex items-start gap-3 p-4 rounded-lg bg-gray-50"
                 >
-                  <IconComponent className="h-6 w-6 text-purple-600 mt-1" />
+                  {IconComponent && <IconComponent className="h-6 w-6 text-purple-600 mt-1" />}
                   <div>
                     <h4 className="font-medium text-sm mb-1">{concept.label}</h4>
                     {concept.description && (

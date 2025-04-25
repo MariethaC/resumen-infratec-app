@@ -1,15 +1,15 @@
 
 import { motion } from "framer-motion";
 import { 
+  ArrowLeft,
+  Info,
   Handshake, 
   Network, 
   Truck, 
   Clock, 
-  Info, 
   DollarSign, 
   Earth, 
   Infinity, 
-  Hammer, 
   Rocket, 
   Computer, 
   Users,
@@ -34,6 +34,7 @@ export interface Summary {
 }
 
 export const iconMap = {
+  "arrow-left": ArrowLeft,
   handshake: Handshake,
   network: Network,
   truck: Truck,
@@ -42,7 +43,6 @@ export const iconMap = {
   "dollar-sign": DollarSign,
   earth: Earth,
   infinity: Infinity,
-  hammer: Hammer,
   rocket: Rocket,
   computer: Computer,
   users: Users,
@@ -82,7 +82,7 @@ const SummaryCard = ({ summary, onClick }: SummaryCardProps) => {
                     variant="secondary"
                     className="flex items-center gap-1 px-3 py-1"
                   >
-                    <IconComponent className="h-4 w-4" />
+                    {IconComponent && <IconComponent className="h-4 w-4" />}
                     <span>{concept.label}</span>
                   </Badge>
                 );

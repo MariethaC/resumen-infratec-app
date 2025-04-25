@@ -48,7 +48,7 @@ El conjunto de componentes es base para que la solución brinde resultados.`,
     date: "2024-04-15",
     keyConcepts: [
       {
-        icon: "arrows-right-left",
+        icon: "handshake",
         label: "Mediador",
         description: "Puente entre personas con objetivos similares"
       },
@@ -58,7 +58,7 @@ El conjunto de componentes es base para que la solución brinde resultados.`,
         description: "Conexión entre personas y empresa"
       },
       {
-        icon: "arrow-right",
+        icon: "truck",
         label: "Canal de distribución",
         description: "Conecta al mundo entero"
       },
@@ -78,7 +78,7 @@ El conjunto de componentes es base para que la solución brinde resultados.`,
         description: "Menor costo de transacción"
       },
       {
-        icon: "globe",
+        icon: "earth",
         label: "Universalidad",
         description: "Usada por todos"
       },
@@ -88,7 +88,7 @@ El conjunto de componentes es base para que la solución brinde resultados.`,
         description: "Limitada por presupuesto"
       },
       {
-        icon: "columns-3",
+        icon: "layers",
         label: "Estándar de bajo costo",
         description: "Comunicación y seguridad accesible"
       },
