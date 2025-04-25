@@ -41,6 +41,7 @@ Tecnologías de información: Hardware + Software
 Combinación de equipos, software, aplicaciones y servicios que resuelven un problema de negocios.
 El conjunto de componentes es base para que la solución brinde resultados.`,
     date: "2024-04-15",
+    imageSrc: "/resumen_ti.png",
     keyConcepts: [
       {
         icon: "handshake",

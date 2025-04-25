@@ -31,6 +31,7 @@ export interface Summary {
   content: string;
   date: string;
   keyConcepts?: KeyConcept[];
+  imageSrc?: string;
 }
 
 export const iconMap = {
@@ -72,21 +73,13 @@ const SummaryCard = ({ summary, onClick }: SummaryCardProps) => {
             </div>
           </div>
           
-          {summary.keyConcepts && (
-            <div className="flex flex-wrap gap-2">
-              {summary.keyConcepts.map((concept, index) => {
-                const IconComponent = iconMap[concept.icon];
-                return (
-                  <Badge
-                    key={index}
-                    variant="secondary"
-                    className="flex items-center gap-1 px-3 py-1"
-                  >
-                    {IconComponent && <IconComponent className="h-4 w-4" />}
-                    <span>{concept.label}</span>
-                  </Badge>
-                );
-              })}
+          {summary.imageSrc && (
+            <div className="mt-3">
+              <img 
+                src={summary.imageSrc} 
+                alt={summary.title}
+                className="w-full h-auto rounded-md object-cover"
+              />
             </div>
           )}
         </div>
