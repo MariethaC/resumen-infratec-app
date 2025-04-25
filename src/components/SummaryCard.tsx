@@ -1,26 +1,7 @@
 
 import { motion } from "framer-motion";
-import { 
-  Computer,
-  ArrowLeft,
-  Handshake, 
-  Network, 
-  Truck, 
-  Clock, 
-  Info,
-  DollarSign, 
-  Earth, 
-  Rocket, 
-  Users,
-  Layers 
-} from "lucide-react";
+import { FileText } from "lucide-react";
 import { Card } from "./ui/card";
-
-export interface KeyConcept {
-  icon: keyof typeof iconMap;
-  label: string;
-  description?: string;
-}
 
 export interface Summary {
   id: number;
@@ -28,24 +9,7 @@ export interface Summary {
   topic: string;
   content: string;
   date: string;
-  keyConcepts?: KeyConcept[];
-  imageSrc?: string;
 }
-
-export const iconMap = {
-  "arrow-left": ArrowLeft,
-  handshake: Handshake,
-  network: Network,
-  truck: Truck,
-  clock: Clock,
-  info: Info,
-  "dollar-sign": DollarSign,
-  earth: Earth,
-  rocket: Rocket,
-  computer: Computer,
-  users: Users,
-  layers: Layers
-};
 
 interface SummaryCardProps {
   summary: Summary;
@@ -54,28 +18,22 @@ interface SummaryCardProps {
 
 const SummaryCard = ({ summary, onClick }: SummaryCardProps) => {
   return (
-    <div className="space-y-3">
-      <div className="flex items-center gap-2">
-        <Computer className="h-5 w-5 text-purple-600" />
-        <h3 className="font-medium text-lg">{summary.title}</h3>
-      </div>
-      
-      <motion.div
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.2 }}
-        onClick={onClick}
-      >
-        <Card className="overflow-hidden cursor-pointer hover:shadow-md transition-shadow">
-          {summary.imageSrc && (
-            <img 
-              src={summary.imageSrc} 
-              alt={summary.title}
-              className="w-full h-auto object-cover"
-            />
-          )}
-        </Card>
-      </motion.div>
-    </div>
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.2 }}
+      onClick={onClick}
+    >
+      <Card className="p-4 cursor-pointer hover:shadow-md transition-shadow">
+        <div className="flex items-start gap-3">
+          <FileText className="h-5 w-5 text-blue-600 mt-1" />
+          <div>
+            <h3 className="font-medium text-lg mb-1">{summary.title}</h3>
+            <p className="text-sm text-gray-600 mb-2">{summary.topic}</p>
+            <p className="text-xs text-gray-500">{summary.date}</p>
+          </div>
+        </div>
+      </Card>
+    </motion.div>
   );
 };
 

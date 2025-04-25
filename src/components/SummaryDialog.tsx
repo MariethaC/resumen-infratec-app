@@ -7,9 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./ui/dialog";
-import { Badge } from "./ui/badge";
 import { Summary } from "./SummaryCard";
-import { iconMap } from "./SummaryCard";
 
 interface SummaryDialogProps {
   summary: Summary | null;
@@ -37,17 +35,6 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
           </DialogTitle>
           <p className="text-sm text-gray-600">{summary.topic}</p>
         </DialogHeader>
-        
-        {summary.imageSrc && (
-          <div className="mt-4">
-            <img 
-              src={summary.imageSrc} 
-              alt={summary.title}
-              className="w-full h-auto rounded-md object-cover"
-            />
-          </div>
-        )}
-        
         <div className="mt-4 text-gray-800 leading-relaxed whitespace-pre-wrap">
           {summary.content}
         </div>
