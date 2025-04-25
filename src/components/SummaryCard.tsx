@@ -1,5 +1,19 @@
+
 import { motion } from "framer-motion";
-import { Computer } from "lucide-react";
+import { 
+  Computer,
+  ArrowLeft,
+  Handshake, 
+  Network, 
+  Truck, 
+  Clock, 
+  Info,
+  DollarSign, 
+  Earth, 
+  Rocket, 
+  Users,
+  Layers 
+} from "lucide-react";
 import { Card } from "./ui/card";
 
 export interface KeyConcept {
@@ -27,7 +41,6 @@ export const iconMap = {
   info: Info,
   "dollar-sign": DollarSign,
   earth: Earth,
-  infinity: Infinity,
   rocket: Rocket,
   computer: Computer,
   users: Users,
