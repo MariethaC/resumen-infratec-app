@@ -25,7 +25,7 @@ const summaryData: Summary[] = [
 - Inteligencia Artificial
 - Internet de las Cosas (IoT)
 - Automatización`,
-    date: "2024-04-15"
+    date: " "
   },
   {
     id: 2,
