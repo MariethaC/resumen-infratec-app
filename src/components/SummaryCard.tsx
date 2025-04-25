@@ -28,8 +28,6 @@ const SummaryCard = ({ summary, onClick }: SummaryCardProps) => {
           <FileText className="h-5 w-5 text-blue-600 mt-1" />
           <div>
             <h3 className="font-medium text-lg mb-1">{summary.title}</h3>
-            <p className="text-sm text-gray-600 mb-2">{summary.topic}</p>
-            <p className="text-xs text-gray-500">{summary.date}</p>
           </div>
         </div>
       </Card>
