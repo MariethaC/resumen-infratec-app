@@ -20,7 +20,7 @@ const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl h-[90vh] overflow-y-auto p-0">
         <img
-          src={summary.url]}
+          src={summary.url}
           alt={summary.title}
           className="w-full h-full object-contain"
         />
