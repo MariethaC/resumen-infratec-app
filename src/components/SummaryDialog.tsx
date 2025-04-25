@@ -1,6 +1,4 @@
 
-import { ArrowLeft } from "lucide-react";
-import { Button } from "./ui/button";
 import {
   Dialog,
   DialogContent,
@@ -18,26 +16,22 @@ interface SummaryDialogProps {
 const SummaryDialog = ({ summary, isOpen, onClose }: SummaryDialogProps) => {
   if (!summary) return null;
 
+  // Map of topics to their corresponding images
+  const topicImages: { [key: string]: string } = {
+    "El rol de las tecnologías": "/lovable-uploads/40c7e76d-289a-4982-8585-40a5304020e4.png",
+    // Add more mappings for other topics as needed
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-3xl h-[80vh] overflow-y-auto">
-        <DialogHeader>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute left-4 top-4"
-            onClick={onClose}
-          >
-            <ArrowLeft className="h-4 w-4" />
-          </Button>
-          <DialogTitle className="text-xl font-semibold pt-2">
-            {summary.title}
-          </DialogTitle>
-          <p className="text-sm text-gray-600">{summary.topic}</p>
-        </DialogHeader>
-        <div className="mt-4 text-gray-800 leading-relaxed whitespace-pre-wrap">
-          {summary.content}
-        </div>
+      <DialogContent className="max-w-4xl h-[90vh] overflow-y-auto p-0">
+        {topicImages[summary.topic] && (
+          <img
+            src={topicImages[summary.topic]}
+            alt={summary.title}
+            className="w-full h-full object-contain"
+          />
+        )}
       </DialogContent>
     </Dialog>
   );
