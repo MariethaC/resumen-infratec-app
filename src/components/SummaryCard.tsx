@@ -6,8 +6,6 @@ import { Card } from "./ui/card";
 export interface Summary {
   id: number;
   title: string;
-  topic: string;
-  date: string;
   url: string;
 }
 
