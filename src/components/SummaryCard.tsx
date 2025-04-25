@@ -9,6 +9,7 @@ export interface Summary {
   topic: string;
   content: string;
   date: string;
+  url: string;
 }
 
 interface SummaryCardProps {
