@@ -9,133 +9,49 @@ const summaryData: Summary[] = [
     id: 1,
     title: "Rol de la Tecnología",
     topic: " ",
-    content: `Impacto de la tecnología en la sociedad moderna:
-
-1. Transformación digital
-- Cambios en la forma de trabajar
-- Nuevas herramientas y metodologías
-- Adaptación continua
-
-2. Beneficios y desafíos
-- Mayor eficiencia y productividad
-- Necesidad de actualización constante
-- Brecha digital
-
-3. Tendencias futuras
-- Inteligencia Artificial
-- Internet de las Cosas (IoT)
-- Automatización`,
-    date: " "
+    content: `holi`,
+    date: " ",
+    url:"public/imagenes/rol-tecnologia.png"
   },
   {
     id: 2,
     title: "Fundamentos de Redes",
     topic: "Redes de datos",
-    content: `Conceptos básicos de redes de datos:
-
-1. Tipos de redes
-- LAN (Red de Área Local)
-- WAN (Red de Área Amplia)
-- MAN (Red de Área Metropolitana)
-
-2. Protocolos principales
-- TCP/IP
-- HTTP/HTTPS
-- DNS
-
-3. Componentes de red
-- Routers
-- Switches
-- Firewalls`,
-    date: "2024-04-16"
+    content: `Conclls`,
+    date: "2024-04-16",
+    url:"public/imagenes/rol-tecnologia.png"
   },
   {
     id: 3,
     title: "Estructura del Data Center",
     topic: "Data center y almacenamiento",
-    content: `Componentes y funcionamiento del Data Center:
-
-1. Infraestructura física
-- Sistemas de refrigeración
-- Alimentación eléctrica
-- Seguridad física
-
-2. Sistemas de almacenamiento
-- SAN (Storage Area Network)
-- NAS (Network Attached Storage)
-- DAS (Direct Attached Storage)
-
-3. Consideraciones de diseño
-- Redundancia
-- Escalabilidad
-- Eficiencia energética`,
-    date: "2024-04-17"
+    content: `Compgética`,
+    date: "2024-04-17",
+    url:"public/imagenes/rol-tecnologia.png"
   },
   {
     id: 4,
     title: "Arquitectura Cliente-Servidor",
     topic: "Servidores e Internet",
-    content: `Funcionamiento de servidores e Internet:
-
-1. Tipos de servidores
-- Servidores web
-- Servidores de aplicaciones
-- Servidores de bases de datos
-
-2. Protocolos de Internet
-- HTTP y HTTPS
-- FTP
-- SMTP
-
-3. Seguridad en servidores
-- Firewall
-- SSL/TLS
-- Actualizaciones de seguridad`,
-    date: "2024-04-18"
+    content: `Funcionad`,
+    date: "2024-04-18",
+    url:"public/imagenes/rol-tecnologia.png"
   },
   {
     id: 5,
     title: "Tecnologías de Virtualización",
     topic: "Virtualización",
-    content: `Conceptos fundamentales de virtualización:
-
-1. Tipos de virtualización
-- Virtualización de servidores
-- Virtualización de escritorio
-- Virtualización de red
-
-2. Beneficios
-- Mejor utilización de recursos
-- Mayor flexibilidad
-- Reducción de costos
-
-3. Herramientas principales
-- VMware
-- Hyper-V
-- VirtualBox`,
-    date: "2024-04-19"
+    content: `Conx`,
+    date: "2024-04-19",
+    url:"public/imagenes/rol-tecnologia.png"
   },
   {
     id: 6,
     title: "Modelos de Servicio Cloud",
     topic: "Cloud computing",
-    content: `Fundamentos de Cloud Computing:
-
-1. Modelos de servicio
-- IaaS (Infraestructura como Servicio)
-- PaaS (Plataforma como Servicio)
-- SaaS (Software como Servicio)
-
-2. Ventajas del cloud
-- Escalabilidad
-- Flexibilidad
-- Pago por uso
-
-3. Principales proveedores
-- AWS
-- Microsoft Azure
-- Google Cloud Platform`,
-    date: "2024-04-20"
+    content: `Fundameud Platform`,
+    date: "2024-04-20",
+    url:"public/imagenes/rol-tecnologia.png"
   }
 ];
 
