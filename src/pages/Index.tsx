@@ -12,8 +12,8 @@ const summaryData: Summary[] = [
   },
   {
     id: 2,
-    title: "Fundamentos de Redes",
-    url:"/imagenes/rol-tecnologia.png"
+    title: "Redes de datos",
+    url:"/imagenes/redes-datos.png"
   },
   {
     id: 3,
