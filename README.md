@@ -1,8 +1,6 @@
-# Welcome to your Lovable project
+# Welcome to Resumenes.app
 
 ## Project info
-
-**URL**: https://lovable.dev/projects/35317afc-2576-435e-9e02-f8a2718907d0
 
 ## How can I edit this code?
 
@@ -64,7 +62,7 @@ This project is built with:
 
 Simply open [Lovable](https://lovable.dev/projects/35317afc-2576-435e-9e02-f8a2718907d0) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain to a Lovable project?
 
 Yes, you can!
 
