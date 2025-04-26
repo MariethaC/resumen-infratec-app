@@ -61,6 +61,22 @@ Desde Lovable:
 - Ve a **Share → Publish** en [Lovable](https://lovable.dev/projects/35317afc-2576-435e-9e02-f8a2718907d0).
 - También puedes conectar tu propio dominio siguiendo [esta guía](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide).
 
+Desde Vercel:
+**Pasos para desplegar en Vercel:**
+- Crea una cuenta en Vercel.
+
+- Conecta tu cuenta de GitHub (o GitLab/Bitbucket) en Vercel.
+
+- Importa tu repositorio en Vercel.
+
+- Vercel detectará automáticamente que tu proyecto usa Vite.
+
+- Haz clic en "Deploy" y ¡listo!
+
+- Tendrás un dominio gratuito del tipo: resumenes.vercel.app (o puedes conectar tu propio dominio personalizado).
+
+Más información aquí: Documentación oficial de Vercel.
+
 ---
 
 ## 📸 Vista previa
