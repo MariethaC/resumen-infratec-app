@@ -17,23 +17,23 @@ const summaryData: Summary[] = [
   },
   {
     id: 3,
-    title: "Estructura del Data Center",
-    url:"/imagenes/rol-tecnologia.png"
+    title: "Data Center y almacenamiento",
+    url:"/imagenes/datacenter.png"
   },
   {
     id: 4,
-    title: "Arquitectura Cliente-Servidor",
-    url:"/imagenes/rol-tecnologia.png"
+    title: "Servidores e Internet",
+    url:"/imagenes/servidores.png"
   },
   {
     id: 5,
-    title: "Tecnologías de Virtualización",
-    url:"/imagenes/rol-tecnologia.png"
+    title: "Virtualización",
+    url:"/imagenes/virtualizacion.png"
   },
   {
     id: 6,
-    title: "Modelos de Servicio Cloud",
-    url:"/imagenes/rol-tecnologia.png"
+    title: "Cloud Computing",
+    url:"/imagenes/cloud-computing.png"
   }
 ];
 
