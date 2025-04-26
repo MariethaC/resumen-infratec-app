@@ -52,6 +52,10 @@ Además, el proyecto se desarrolló utilizando tecnologías modernas para practi
 - Haz clic en **"Code"** → **"Codespaces"** → **"New Codespace"**.
 - Edita directamente en un entorno web completo.
 
+### 4. Usar Lovable (modo seguro)
+Puedes probar cambios desde la interfaz de Lovable sin afectar directamente este repositorio.
+⚠️ Lovable no tiene permiso para hacer commits en este repo a menos que lo autorice. Úsalo solo como entorno de pruebas o diseño.
+
 ---
 
 ## 🌐 ¿Cómo desplegar el proyecto?
@@ -82,6 +86,7 @@ Más información aquí: Documentación oficial de Vercel.
 ## 📸 Vista previa
 
 ![image](https://github.com/user-attachments/assets/dec2b40c-eefa-4938-8837-ded84b133661)
+![image](https://github.com/user-attachments/assets/d06840eb-ff73-4a28-9e55-57c5b97da365)
 
 ---
 Proyecto creado con cariño 💙.
